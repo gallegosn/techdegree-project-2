@@ -123,7 +123,7 @@ submit.addEventListener('click', (event) => {
    showPage(data, 1);
    addPagination(data);
    const newSearch = document.getElementById('search');
-   newSearch.value = 'Search by first name...';
+   newSearch.value = '';
    // Helpful log statement to test function
    console.log(' button is functional!');
  });

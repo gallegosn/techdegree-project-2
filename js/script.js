@@ -8,30 +8,51 @@ For assistance:
    Check out the "Project Resources" section of the Instructions tab: https://teamtreehouse.com/projects/data-pagination-and-filtering#instructions
    Reach out in your Slack community: https://treehouse-fsjs-102.slack.com/app_redirect?channel=unit-2
 */
-/*let header = document.querySelector('header');
+//The code below adds the search bar as well as the search and reset buttons to the page
+const header = document.querySelector('header');
    header.insertAdjacentHTML('beforeend', `
       <label for="search" class="student-search">
-         <input id="search" placeholder="Search by name...">
+         <input id="search" placeholder="Search by first name...">
          <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
          <button type="button" id="button2">Reset</button>
       </label>
-   `);*/
-/* Variables to reference the `input` and search `button` elements */
-//const search = document.getElementById('search');
-//const submit = document.querySelector('button');
-//const reset = document.getElementById('button2');
+   `);
+/* Variables to reference the `input` search, and reset and submit `button` elements */
+const search = document.getElementById('search');
+const submit = document.querySelector('button');
+const reset = document.getElementById('button2');
 //Search Function
-/*function searchFunc(searchInput, elements){
+function searchFunc(searchInput, elements){
    searchInput = searchInput.value; 
    let foundStudent = [];
+   
    for (let i = 0; i < elements.length; i++){
       elements[i].className = '';
       if (searchInput.length != 0 && elements[i].name.first.toLowerCase() == searchInput.toLowerCase()){
          foundStudent.push(elements[i]);
       }
-   } 
-   showPage(foundStudent, 1);    
-}*/
+   }
+   if (foundStudent.length != 0) { 
+      showPage(foundStudent, 1);
+      let linkList = document.querySelector('.link-list');
+      linkList.innerHTML = ''; 
+      linkList.insertAdjacentHTML('beforeend',`
+               <li>
+                  <button type="button">1</button>
+               </li>
+            `);  
+      const firstButton = linkList.querySelector('button');
+      firstButton.className = 'active';
+   } else {
+      const newLabel = document.querySelector('.student-list');
+      newLabel.innerHTML = '';
+      newLabel.insertAdjacentHTML('beforeend', `
+         <label>No Results....</label>
+      `);
+      const linkList = document.querySelector('.link-list');
+      linkList.innerHTML = '';
+   }
+}
 /*
 Create the `showPage` function
 This function will create and insert/append the elements needed to display a "page" of nine students
@@ -57,7 +78,6 @@ function showPage(elements, page){
          `);
       }
     } 
-    addPagination(elements);   
 }
 /*
 Create the `addPagination` function
@@ -65,6 +85,7 @@ This function will create and insert/append the elements needed for the paginati
 */
 
 function addPagination(elements){
+   //console.log("addPagination function called");
    let pagesNeeded = Math.ceil(elements.length / 9);
    let linkList = document.querySelector('.link-list');
    linkList.innerHTML = '';
@@ -75,6 +96,7 @@ function addPagination(elements){
             </li>
          `);
       }
+      // Initialize the first button to being active
       const firstButton = linkList.querySelector('button');
       firstButton.className = 'active';
       linkList.addEventListener('click', (e) => {
@@ -88,32 +110,24 @@ function addPagination(elements){
 }
 
 /* submit listener - code adapted from Project Warm Up Workspace */ 
-/*submit.addEventListener('click', (event) => {
+submit.addEventListener('click', (event) => {
    event.preventDefault();
    console.log(search.value);
-   // Invoke your search function here - Arguments: search, tableCells
    searchFunc(search, data);
- 
    // Helpful log statement to test function
    console.log('Submit button is functional!'); 
  });
+ //reset the search field and reset the page to original state
  reset.addEventListener('click', (event) => {
    event.preventDefault();
-   //console.log(search.value);
-   // Invoke your search function here - Arguments: search, tableCells
    showPage(data, 1);
+   addPagination(data);
+   const newSearch = document.getElementById('search');
+   newSearch.value = 'Search by first name...';
    // Helpful log statement to test function
    console.log(' button is functional!');
- });*/
-/* submit listener - code adapted from Project Warm Up Workspace */ 
-/*search.addEventListener('keyup', (event) => {
-   event.preventDefault();
-   // Invoke your search function here - Arguments: search, data
-   searchFunc(search, data);
- 
-   // Helpful log statement to test function
-   console.log('Keyup event on the Search input is functional!');
- });*/
+ });
+
 // Call functions;
 showPage(data, 1);
 addPagination(data);

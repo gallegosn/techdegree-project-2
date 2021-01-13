@@ -108,7 +108,7 @@ function addPagination(elements){
             const previousButton = linkList.querySelector('.active');
             previousButton.className = '';
             e.target.className = 'active';
-            showPage(data, e.target.textContent);
+            showPage(elements, e.target.textContent);
          }
       });
 }

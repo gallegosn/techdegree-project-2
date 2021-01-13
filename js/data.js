@@ -42,7 +42,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Gregory",
+      first: "Ethel",
       last: "Vargas",
     },
     email: "gregory.vargas@example.com",
@@ -59,7 +59,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Lawrence",
+      first: "Ethel",
       last: "Martin",
     },
     email: "lawrence.martin@example.com",
@@ -76,7 +76,7 @@ const data = [
   {
     name: {
       title: "Ms",
-      first: "Stacey",
+      first: "Ethel",
       last: "Wells",
     },
     email: "stacey.wells@example.com",
@@ -93,7 +93,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Terrance",
+      first: "Ethel",
       last: "Newman",
     },
     email: "terrance.newman@example.com",
@@ -110,7 +110,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Morris",
+      first: "Ethel",
       last: "Burton",
     },
     email: "morris.burton@example.com",
@@ -127,7 +127,7 @@ const data = [
   {
     name: {
       title: "Ms",
-      first: "Terra",
+      first: "Ethel",
       last: "Franklin",
     },
     email: "terra.franklin@example.com",
@@ -144,7 +144,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Ted",
+      first: "Ethel",
       last: "Bradley",
     },
     email: "ted.bradley@example.com",
@@ -161,7 +161,7 @@ const data = [
   {
     name: {
       title: "Mrs",
-      first: "Celina",
+      first: "Ethel",
       last: "Griffin",
     },
     email: "celina.griffin@example.com",
@@ -178,7 +178,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Duane",
+      first: "Ethel",
       last: "Soto",
     },
     email: "duane.soto@example.com",
@@ -195,7 +195,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Ray",
+      first: "Ethel",
       last: "Vargas",
     },
     email: "ray.vargas@example.com",
@@ -212,7 +212,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Douglas",
+      first: "Ethel",
       last: "Torres",
     },
     email: "douglas.torres@example.com",
@@ -229,7 +229,7 @@ const data = [
   {
     name: {
       title: "Ms",
-      first: "Mia",
+      first: "Ethel",
       last: "Snyder",
     },
     email: "mia.snyder@example.com",
@@ -246,7 +246,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Mario",
+      first: "Ethel",
       last: "Freeman",
     },
     email: "mario.freeman@example.com",
@@ -263,7 +263,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Herman",
+      first: "Ethel",
       last: "Griffin",
     },
     email: "herman.griffin@example.com",
@@ -280,7 +280,7 @@ const data = [
   {
     name: {
       title: "Ms",
-      first: "Marian",
+      first: "Ethel",
       last: "Williamson",
     },
     email: "marian.williamson@example.com",
@@ -297,7 +297,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Victor",
+      first: "Ethel",
       last: "Rodriquez",
     },
     email: "victor.rodriquez@example.com",
@@ -314,7 +314,7 @@ const data = [
   {
     name: {
       title: "Miss",
-      first: "Beverley",
+      first: "Ethel",
       last: "Gregory",
     },
     email: "beverley.gregory@example.com",
@@ -331,7 +331,7 @@ const data = [
   {
     name: {
       title: "Mrs",
-      first: "Nellie",
+      first: "Ethel",
       last: "Schmidt",
     },
     email: "nellie.schmidt@example.com",
@@ -348,7 +348,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Carlos",
+      first: "Ethel",
       last: "Gibson",
     },
     email: "carlos.gibson@example.com",
@@ -365,7 +365,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Kevin",
+      first: "Ethel",
       last: "Hamilton",
     },
     email: "kevin.hamilton@example.com",
@@ -382,7 +382,7 @@ const data = [
   {
     name: {
       title: "Mr",
-      first: "Flenn",
+      first: "Ethel",
       last: "Torres",
     },
     email: "flenn.torres@example.com",

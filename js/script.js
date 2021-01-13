@@ -27,22 +27,24 @@ function searchFunc(searchInput, elements){
    let foundStudent = [];
    
    for (let i = 0; i < elements.length; i++){
-      elements[i].className = '';
+      //elements[i].className = '';
       if (searchInput.length != 0 && elements[i].name.first.toLowerCase() == searchInput.toLowerCase()){
          foundStudent.push(elements[i]);
       }
    }
+   console.log(foundStudent);
    if (foundStudent.length != 0) { 
       showPage(foundStudent, 1);
-      let linkList = document.querySelector('.link-list');
-      linkList.innerHTML = ''; 
-      linkList.insertAdjacentHTML('beforeend',`
+      //let linkList = document.querySelector('.link-list');
+      //linkList.innerHTML = ''; 
+      addPagination(foundStudent);
+      /*linkList.insertAdjacentHTML('beforeend',`
                <li>
                   <button type="button">1</button>
                </li>
             `);  
       const firstButton = linkList.querySelector('button');
-      firstButton.className = 'active';
+      firstButton.className = 'active';*/
    } else {
       const newLabel = document.querySelector('.student-list');
       newLabel.innerHTML = '';
@@ -52,6 +54,8 @@ function searchFunc(searchInput, elements){
       const linkList = document.querySelector('.link-list');
       linkList.innerHTML = '';
    }
+   const newSearch = document.getElementById('search');
+   newSearch.value = '';
 }
 /*
 Create the `showPage` function

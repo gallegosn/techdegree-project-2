@@ -23,15 +23,21 @@ const submit = document.querySelector('button');
 const reset = document.getElementById('button2');
 //Search Function that looks for matches by first name only, not a filter search
 function searchFunc(searchInput, elements){
-   searchInput = searchInput.value; 
+   searchInput = searchInput.value.toLowerCase(); 
    let foundStudent = [];
    
+
    for (let i = 0; i < elements.length; i++){
-      //elements[i].className = '';
-      if (searchInput.length != 0 && elements[i].name.first.toLowerCase() == searchInput.toLowerCase()){
-         foundStudent.push(elements[i]);
+      let firstName = elements[i].name.first.toLowerCase();
+      let lastName = elements[i].name.last.toLowerCase();
+      //elements[i].name.first.toLowerCase() == searchInput.toLowerCase()
+      if (searchInput.length != 0 && firstName.includes(searchInput) || lastName.includes(searchInput)){
+       foundStudent.push(elements[i]);
       }
+      
+    
    }
+
    console.log(foundStudent);
    if (foundStudent.length != 0) { 
       showPage(foundStudent, 1);

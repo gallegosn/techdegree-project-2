@@ -12,7 +12,7 @@ For assistance:
 const header = document.querySelector('header');
    header.insertAdjacentHTML('beforeend', `
       <label for="search" class="student-search">
-         <input id="search" placeholder="Search by first name...">
+         <input id="search" placeholder="Search by name...">
          <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
          <button type="button" id="button2">Reset</button>
       </label>

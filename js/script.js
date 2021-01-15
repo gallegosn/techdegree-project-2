@@ -21,7 +21,7 @@ const header = document.querySelector('header');
 const search = document.getElementById('search');
 const submit = document.querySelector('button');
 const reset = document.getElementById('button2');
-//Search Function that looks for matches by first name only, not a filter search
+//Search Function that looks for based on  query entered
 function searchFunc(searchInput, elements){
    searchInput = searchInput.value.toLowerCase(); 
    let foundStudent = [];
